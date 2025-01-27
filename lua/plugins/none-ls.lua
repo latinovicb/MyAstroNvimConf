@@ -1,5 +1,6 @@
 -- Customize None-ls sources
 
+-- Does not support ruff
 ---@type LazySpec
 return {
   "nvimtools/none-ls.nvim",
@@ -14,9 +15,9 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
-      null_ls.builtins.diagnostics.pylint.with {
-        extra_args = { "--disable=C0114", "--disable=C0115", "--disable=C0116", "--disable=R0903", "--disable=R1710" }, -- Disables missing module docstring warning
-      },
+      -- null_ls.builtins.diagnostics.pylint.with {
+      --   extra_args = { "--disable=C0114", "--disable=C0115", "--disable=C0116", "--disable=R0903", "--disable=R1710" }, -- Disables missing module docstring warning
+      -- },
     }
     return config -- return final config table
   end,
