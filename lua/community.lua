@@ -42,4 +42,7 @@ return {
   {
     "czheo/mojo.vim",
   },
+  {
+    "hat0uma/csvview.nvim",
+  },
 }
